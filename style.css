@@ -5,15 +5,23 @@
 }
 .hero-content{
     position: absolute;
+    width: 100%;
+    padding:0 10%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
+    
 }
 
 #carouselExampleIndicators{
     position: relative;
+}
+.carousel-item img{
+    max-height: 100vh;
+    min-height: 400px;
+    width: 100vw;
 }
 
 .about-img img{
@@ -45,4 +53,15 @@
 .login{
     height: 100vh;
     width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content h2{
+        font-size: large;
+    }
+    .hero-content .btn {
+        width: 120px;
+        height: 50px;
+        font-size: 12px;
+    }
 }
