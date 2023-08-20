@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arteaaa</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><span class="text-success">AR</span>TEA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="Display()"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+    </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+          <div class="modal-body">               
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" onClick="window.location.reload(); alert('Order Successfully.')">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide bg-dark" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="hero-content">
+        <h2 class="hero-title text-uppercase text-success">ARtea Corner</h2>
+        <br><h1 class="text-light">“Good vibes in every 'CUP' ”</h1>
+        <h1 class="text-light">This is a promise that ARtea Corner is the best choice to <br> relax and enjoy every cup.</h1></br>
+        <a href="#menu"><button class="btn btn-success py-3 px-4 text-uppercase">Shop Milk Tea</button></a>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/bg.jpg" class="d-block w-100" alt="..." style="height: 100vh;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/bg1.jpg" class="d-block w-100" alt="..." style="height: 100vh;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/bg3.jpg" class="d-block w-100" alt="..." style="height: 100vh;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- ======= About Section ======= -->
+<section id="about" class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="text-center pb-3">
+        <h2 class="text-uppercase">About Us</h2>
+      </div>
+      <div class="row gy-4">
+        <div class="col-lg-6 position-relative about-img">
+            <img src="images/about.jpg" alt="aboutttt" srcset="">
+        </div>
+        <div class="col-lg-6 d-flex align-items-end">
+          <div class="content ps-0 ps-lg-5">
+            <p>Artea Corner is a dining establishment located in Bagabag, Sto. Tomas, Isabela. It is known for its cozy and welcoming atmosphere. The ARtea Corner offers a diverse menu,to suit every taste. <br><br>
+                The interior of Artea Corner is adorned with tasteful decor and comfortable seating, creating a relaxing ambiance for diners. The staff is known for their friendly and attentive service, ensuring a pleasant dining experience for all guests. <br><br>               
+                The menu at Artea Corner features a variety of options, including milktea , Ice Coffee, and ect, as well as favorite burgers. They also serve refreshing drinks, including freshly brewed coffee, smoothies, and milkshakes. <br><br>               
+                In addition to their delectable food and drinks, Artea Corner also offers a comfortable outdoor seating area, perfect for enjoying the pleasant weather or hosting small gatherings. The Artea Corner is location in Bagabag, Sto. Tomas provides a beautiful backdrop of nature, making it an ideal place to unwind and enjoy a delicious drink and food. <br><br>               
+                Whether you are looking for a simply a place to relax and enjoy good food, Artea Corner in Bagabag, Sto. Tomas, Isabela is an excellent choice.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</section>
+
+<!-- ======= Menu Section ======= -->
+<section id="menu" class="py-5">
+    <div class="container">
+      <div class="text-center py-3">
+        <h2 class="mb-3 text-uppercase">Our Menu</h2>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m1.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P120.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m1.jpg', '120.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m2.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P130.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m2.jpg', '130.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m6.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P110.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m6.jpg', '110.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m4.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P120.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m4.jpg', '120.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m5.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P110.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m5.jpg', '110.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m3.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P150.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m3.jpg', '150.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m7.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P130.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m7.jpg', '120.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-dark text-white" >
+              <img src="images/m9.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="text-uppercase text-success h4">Milk Tea</p>
+                <p class="h5">P120.00</p>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <input type="number" name="quantityy" value="1" class="col-md-5 mr-3">
+                    <button class="btn btn-success col-md-2" onclick="Add('Milk Tea', 'images/m9.jpg', '120.00', '1')"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Contact-->
+<section class="page-section bg-dark text-white" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="text-uppercase text-light p-5">Contact Us</h2>
+        </div>
+        <div class="row gy-4 mb-4">
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center bg-success p-3 rounded">
+                <div>
+                  <h3>Our Address</h3>
+                  <p>Bagabag, Santo Tomas, Philippines, 3327</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="info-item d-flex align-items-center bg-success p-3 rounded">
+                <div>
+                  <h3>Email Us</h3>
+                  <p>Artea.corner@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center bg-success p-3 rounded">
+                <div>
+                  <h3>Call Us</h3>
+                  <p>(+63) 935-7616-127</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center bg-success p-3 rounded">
+                <div>
+                  <h3>Opening Hours</h3>
+                  <p><strong>Mon-Sat:</strong> 8AM - 6PM;
+                    <strong>Sunday:</strong> Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        <form id="contactForm">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <input class="form-control p-3" id="name" type="text" placeholder="Enter your name" required/>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input class="form-control p-3" id="email" type="email" placeholder="Enter your email" required/>
+                    </div>
+                    <div class="form-group mb-md-0 mb-3">
+                        <input class="form-control p-3" id="phone" type="tel" placeholder="Enter your mobile number" required />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0 h-100">
+                        <textarea class="form-control h-100 p-3" id="message" placeholder="Type here your message" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-xl btn-success text-uppercase p-3 mb-5" id="submitButton" type="submit">Send Message</button></div>
+        </form>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="p-3 text-center bg-dark text-white border-top border-success">
+    <p class="text-success">&copy; 2023 Artea Corner. All rights reserved.</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
